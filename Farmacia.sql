@@ -4,6 +4,7 @@ CREATE DATABASE farmacia;
 
 -- Usar la base de datos farmacia
 USE farmacia;
+
 CREATE TABLE modulo (
     id_modulo INT IDENTITY(1,1) NOT NULL,
     mod_url NVARCHAR(MAX) NOT NULL,
@@ -127,4 +128,3 @@ CREATE TABLE ventadetalle (
     FOREIGN KEY (id_venta) REFERENCES venta (id_venta),
     FOREIGN KEY (id_producto) REFERENCES producto (id_producto)
 );
-
